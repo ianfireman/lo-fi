@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imlbf/lo-fi.git"
+    "url": "git+https://github.com/ianfireman/lo-fi.git"
   },
   "author": "Ian Fireman <mister.mox@hotmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imlbf/lo-fi/issues"
+    "url": "https://github.com/ianfireman/lo-fi/issues"
   },
-  "homepage": "https://github.com/imlbf/lo-fi#readme"
+  "homepage": "https://github.com/ianfireman/lo-fi#readme"
 }
