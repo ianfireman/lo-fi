@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/lo-fi',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/lo-fi/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle lo-fi@0.0.1~prepublish: lo-fi@0.0.1
+11 silly lifecycle lo-fi@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/lo-fi/0.0.1/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/lo-fi' ]
+13 verbose tarball /home/ubuntu/.npm/lo-fi/0.0.1/package.tgz
+14 verbose folder /home/ubuntu/workspace/lo-fi
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/lo-fi/0.0.1/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd lo-fi@0.0.1
+18 verbose afterAdd /home/ubuntu/.npm/lo-fi/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/lo-fi/0.0.1/package/package.json written
+21 silly publish { name: 'lo-fi',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'a lofilization of code',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ianfireman/lo-fi.git' },
+21 silly publish   author: { name: 'Ian Fireman', email: 'mister.mox@hotmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/ianfireman/lo-fi/issues' },
+21 silly publish   homepage: 'https://github.com/ianfireman/lo-fi#readme',
+21 silly publish   readme: '# lo-fi\n\nA Node.js package that checks whether a given string is null or empty. A basic package for an npm publish tutorial.\n\n## Usage\n\nFirst, install the package using npm:\n\n    npm install lo-fi --save\n\nThen, require the package and use it like so:\n\n    var loFi = require(\'lo-fi\');\n\n    console.log(loFi("")); // true\n    console.log(loFi(null)); // true\n    console.log(loFi(undefined)); // true\n\n    console.log(loFi("Hello World")); // false\n\n## License\n\nMIT',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '373aaf30393de7302b1fcc7428db9ec7a95eb94a',
+21 silly publish   _id: 'lo-fi@0.0.1',
+21 silly publish   _shasum: 'b043336fa8671a069daefaa8d01927e2b6d18163',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name lo-fi
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'lo-fi',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'lo-fi',
+26 silly mapToRegistry   name: 'lo-fi',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/lo-fi
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/ubuntu/.npm/lo-fi/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/lo-fi
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 5:00:38 AM
+33 verbose request using bearer token for auth
+34 verbose request id 45fe2027e1fff219
+35 http request PUT https://registry.npmjs.org/lo-fi
+36 http 403 https://registry.npmjs.org/lo-fi
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '124',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 30 Sep 2017 05:00:39 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ord1746-ORD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1506747638.218785,VS0,VE1499',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /home/ubuntu/.npm/registry.npmjs.org/lo-fi on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0 : lo-fi
+40 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid lo-fi
+43 verbose cwd /home/ubuntu/workspace/lo-fi
+44 error Linux 4.9.17-c9
+45 error argv "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/node" "/home/ubuntu/.nvm/versions/node/v6.11.2/bin/npm" "publish"
+46 error node v6.11.2
+47 error npm  v3.10.10
+48 error code E403
+49 error You cannot publish over the previously published version 0.0.1. Try bumping the version to 1.0.0 : lo-fi
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
