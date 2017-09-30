@@ -1,0 +1,19 @@
+{
+  "name": "lo-fi",
+  "version": "0.0.1",
+  "description": "a lofilization of code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imlbf/lo-fi.git"
+  },
+  "author": "Ian Fireman <mister.mox@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imlbf/lo-fi/issues"
+  },
+  "homepage": "https://github.com/imlbf/lo-fi#readme"
+}
